@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/provider/theme-provider";
-import { ConvexClientProvider } from "@/components/provider/convex-provider";
 import { Toaster } from "sonner";
+
+import { ConvexClientProvider } from "@/components/provider/convex-provider";
+import { ThemeProvider } from "@/components/provider/theme-provider";
+import { ModalProvider } from "@/components/provider/modal-provider";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -44,7 +46,7 @@ export default function RootLayout({
               storageKey="notepad-theme-2"
             >
               <Toaster position="bottom-center" />
-              {/* <ModalProvider /> */}
+              <ModalProvider />
               {children}
             </ThemeProvider>
           {/* </EdgeStoreProvider> */}

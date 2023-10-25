@@ -19,12 +19,18 @@ import { api } from "@/convex/_generated/api";
 import Item from "./item";
 import { toast } from "sonner";
 import { DocumentList } from "./documents-list";
-import { PopoverContent, Popover, PopoverTrigger } from "@/components/ui/popover";
+import {
+  PopoverContent,
+  Popover,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { TrashBox } from "./trash-box";
 import { useSearch } from "@/hooks/use-search";
+import { useSettings } from "@/hooks/use-settings";
 
 export const Navigation = () => {
-  const search = useSearch()
+  const search = useSearch();
+  const settings = useSettings();
   const pathname = usePathname();
   const isMobile = useMediaQuery("(max-width: 768px)");
   const create = useMutation(api.documents.create);
@@ -142,7 +148,7 @@ export const Navigation = () => {
         <div>
           <UserItem />
           <Item label="Search" icon={Search} isSearch onClick={search.onOpen} />
-          <Item label="Settings" icon={Settings} onClick={() => {}} />
+          <Item label="Settings" icon={Settings} onClick={settings.onOpen} />
           <Item onClick={handelCreate} label="Add a page" icon={PlusCircle} />
         </div>
         <Popover>

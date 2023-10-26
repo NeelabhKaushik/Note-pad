@@ -14,7 +14,7 @@ import { ChevronsLeftRight } from "lucide-react";
 
 export const UserItem = () => {
   const { user } = useUser();
-  console.log(user);
+  // console.log(user);
 
   return (
     <DropdownMenu>

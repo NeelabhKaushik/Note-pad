@@ -50,7 +50,7 @@ export const TrashBox = () => {
     });
 
     if (params.documentId === documentId) {
-      router.push("/document");
+      router.push("/documents");
     }
   };
 

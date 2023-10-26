@@ -19,7 +19,13 @@ export const Heading = () => {
         <div className="mt-4">
           <Typewriter
             options={{
-              strings: ["Faster", "Better", "Collaborative"],
+              strings: [
+                "Faster",
+                "Better",
+                "Collaborative",
+                "Efficient",
+                "Organized",
+              ],
               autoStart: true,
               loop: true,
             }}
@@ -27,8 +33,7 @@ export const Heading = () => {
         </div>
       </h1>
       <h2 className="text-base sm:text-xl md:text-2xl font-medium">
-        Notepad is the connected workspace where <br />
-        better, faster work happens.
+        Where Work Meets Efficiency <br /> in a Unified Space
       </h2>
       {isLoading && (
         <div className="w-full flex items-center justify-center">

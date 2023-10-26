@@ -14,7 +14,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Notepad",
   description: "Better note taking app",
-  icons: "/public/images/logo.svg",
 };
 
 export default function RootLayout({
@@ -25,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <link rel="icon" href="/logo.svg" sizes="any" />
         <ConvexClientProvider>
           <EdgeStoreProvider>
             <ThemeProvider
@@ -32,7 +32,7 @@ export default function RootLayout({
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange
-              storageKey="jotion-theme-2"
+              storageKey="notepad-theme"
             >
               <Toaster position="bottom-center" />
               <ModalProvider />

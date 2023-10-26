@@ -8,32 +8,36 @@ import Image from "next/image";
 
 import { api } from "@/convex/_generated/api";
 import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 const DocumentsPage = () => {
   const { user } = useUser();
+  const router = useRouter();
   const create = useMutation(api.documents.create);
 
   const onCreate = () => {
-    const promise = create({ title: "Untitled" });
+    const promise = create({ title: "Untitled" }).then((documentId) =>
+      router.push(`/documents/${documentId}`)
+    );
 
     toast.promise(promise, {
       loading: "Creating a Note...",
       success: "New Note created",
       error: "Failed to create a ew Note",
-    })
+    });
   };
 
   return (
     <div className="h-full flex flex-col items-center justify-center space-y-4">
       <Image
-        src="/empty.png"
+        src="/home.png"
         height={300}
         width={300}
         alt="Empty"
         className="dark:hidden"
       />
       <Image
-        src="/empty-dark.png"
+        src="/home-dark.png"
         height={300}
         width={300}
         alt="Empty"

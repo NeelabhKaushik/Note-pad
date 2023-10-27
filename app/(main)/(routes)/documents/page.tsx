@@ -54,7 +54,7 @@ const DocumentsPage = () => {
         Or learn more about Notepad
         <a
           target="_blank"
-          href="https://twitter.com/"
+          href="https://notepad-nk.vercel.app/shared/3ky3j00m3t4w7acmhsemx5ak9k443d0"
           rel="noopener noreferrer"
           className="text-sky-500 hover:underline ml-1"
         >

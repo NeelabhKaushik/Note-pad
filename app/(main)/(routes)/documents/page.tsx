@@ -50,6 +50,17 @@ const DocumentsPage = () => {
         <PlusCircle className="h4 w-4 mr-2" />
         Create A Note
       </Button>
+      <div className="text-sm">
+        Or learn more about Notepad
+        <a
+          target="_blank"
+          href="https://twitter.com/"
+          rel="noopener noreferrer"
+          className="text-sky-500 hover:underline ml-1"
+        >
+          here
+        </a>
+      </div>
     </div>
   );
 };

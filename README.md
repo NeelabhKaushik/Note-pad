@@ -1,4 +1,4 @@
-![image](https://github.com/NeelabhKaushik/Note-pad/assets/119127146/d5ea3cdd-1b11-49d6-addc-4990ca90192b)# Notepad - Next.js Notes App with Real-Time Database
+# Notepad - Next.js Notes App with Real-Time Database
 
 [Live Demo](https://notepad-nk.vercel.app/) | [GitHub Repository](https://github.com/NeelabhKaushik/Note-pad.git)
 

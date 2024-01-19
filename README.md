@@ -13,7 +13,7 @@ Developed a feature-rich note application with real-time database using Next.js 
 
 ## Features
 - **Notion-style Editor**: Implemented a Notion-style editor for intuitive content creation.
-  https://github.com/NeelabhKaushik/Note-pad/assets/119127146/ccb26800-a673-459e-b701-0d9071e42b6f
+  <img width="1680" alt="ScreenShot 2024-01-19 at 10 16 15 AM" src="https://github.com/NeelabhKaushik/Note-pad/assets/119127146/341c42d4-f6ec-4660-afc7-12b21ae39d72">
 
 - **Light/Dark Mode**: Offered light/dark mode for personalized visual preferences.
   ![image](https://github.com/NeelabhKaushik/Note-pad/assets/119127146/1329e404-f5ae-419c-82a3-d1cf541c19a3)
